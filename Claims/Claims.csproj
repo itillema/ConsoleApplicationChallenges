@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClaimsPOCO.cs" />
     <Compile Include="ClaimsProgram.cs" />
     <Compile Include="ClaimsRepo.cs" />
     <Compile Include="ClaimsUI.cs" />
