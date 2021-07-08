@@ -1,4 +1,5 @@
 ﻿using System;
+using Badges;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -111,7 +112,16 @@ namespace Badges
 
         private void ViewAllBadges()
         {
-
+            
+            Console.WriteLine("All Badges");
+            
+            //Console.WriteLine("Badge # {0}, Door Access {1}", item.Key, item.Value);
+                            
+                Console.WriteLine("Press any key to return to the System Admin menu...");
+            Console.ReadKey();
+            Console.Clear();
+            Menu();
+                
         }
 
     }
