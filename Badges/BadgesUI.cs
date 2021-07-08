@@ -60,7 +60,48 @@ namespace Badges
 
         private void CreateNewBadge()
         {
+            Badge badgeInfo = new Badge();
 
+            //Badge Name
+            Console.WriteLine("Input the new badge name: ");
+            badgeInfo.BadgeName = Console.ReadLine();
+
+            //Badge Number/ID
+            Console.WriteLine("Input the new badge number/ID: ");
+            string stringBadgeNumber = Console.ReadLine();
+            int intBadgeNumber = int.Parse(stringBadgeNumber);
+            badgeInfo.BadgeID = intBadgeNumber;
+            AddDoorsMenu();
+
+            void AddDoorsMenu()
+            {
+                //Accessable doors
+                Console.WriteLine("List a door that this badge will have access to: ");
+
+                //find and add door info
+                string doorInput = Console.ReadLine();
+                badgeInfo.DoorName.Add(doorInput);
+                
+                Console.WriteLine("Would you like to:\n" +
+                    "1. Add another door to this badge?\n" +
+                    "2. Return to the System Admin menu?");
+                string addAnotherDoorInput = Console.ReadLine();
+                switch (addAnotherDoorInput)
+                {
+                    case "1":
+                        Console.Clear();
+                        AddDoorsMenu();
+                        break;
+                    case "2":
+                        Console.Clear();
+                        Menu();
+                        break;
+                    default:
+                        break;
+                }
+                
+            }
+                
         }
 
         private void EditBadge()

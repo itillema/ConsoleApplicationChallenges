@@ -13,13 +13,13 @@ namespace Badges
         public Dictionary<string, int> badgeLUT = new Dictionary<string, int>();
 
         //Create New Badge
-        public void AddBadgeInfo(Badge badgeInfo)
+        public void AddBadgeInfo(Badge badgeInfo) //Method
         {
             badgeDict.Add(badgeInfo.BadgeID, badgeInfo);
             badgeLUT.Add(badgeInfo.BadgeName, badgeInfo.BadgeID);
         }
 
-
+        // public/private/protected return_type functionName(parameters)
         //Read or Pull
         public void GetBadgeInfo(List<Badge> badges)
         {
