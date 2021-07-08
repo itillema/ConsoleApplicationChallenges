@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BadgesPOCO.cs" />
     <Compile Include="BadgesProgram.cs" />
     <Compile Include="BadgesRepo.cs" />
     <Compile Include="BadgesUI.cs" />
