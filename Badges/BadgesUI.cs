@@ -112,12 +112,14 @@ namespace Badges
 
         private void ViewAllBadges()
         {
+            //I should be able to view the dictionary exactly how I have it in the Repo, but the method
             
             Console.WriteLine("All Badges");
             
-            //Console.WriteLine("Badge # {0}, Door Access {1}", item.Key, item.Value);
-                            
-                Console.WriteLine("Press any key to return to the System Admin menu...");
+            
+            //Console.WriteLine("Badge # {0}, Door Assignment {1}", item.Key, item.Value);
+                                                           
+            Console.WriteLine("Press any key to return to the System Admin menu...");
             Console.ReadKey();
             Console.Clear();
             Menu();

@@ -56,5 +56,11 @@
   <ItemGroup>
     <Content Include="BadgesDevRequirements.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Claims\Claims.csproj">
+      <Project>{d4cdeaeb-c12d-4d2d-bbf4-00a66b7a24e7}</Project>
+      <Name>Claims</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
