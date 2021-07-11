@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GreenPlanPOCO.cs" />
     <Compile Include="GreenPlanProgram.cs" />
     <Compile Include="GreenPlanRepo.cs" />
     <Compile Include="GreenPlanUI.cs" />
