@@ -98,9 +98,24 @@ namespace Claims
         
         public void NextClaim()
         {
-            List<ClaimContent> viewLastClaimContent = _contentRepo.GetClaimContents();
+            //List<ClaimContent> viewLastClaimContent = _contentRepo.GetClaimContents();
 
-            Console.WriteLine(viewLastClaimContent.Last());
+            //Console.WriteLine(viewLastClaimContent.Last());
+
+            List<ClaimContent> viewClaimContent = _contentRepo.GetClaimContents();
+
+            //figure out how to format correctly
+            foreach (ClaimContent claimContent in viewClaimContent.Last(_contentRepo.GetClaimContents == [viewClaimContent -1]))
+            {
+                Console.WriteLine($"Claim ID {claimContent.ClaimID} \n" +
+                    $"Claim Type {claimContent.ClaimType} \n" +
+                    $"Description {claimContent.Description} \n" +
+                    $"Claim Amount {claimContent.ClaimAmount} \n" +
+                    $"Date of Incident {claimContent.DateOfIncident} \n" +
+                    $"Date of Claim {claimContent.DateOfClaim} \n" +
+                    $"Valid Claim? {claimContent.IsValid}");
+            }
+
             Console.WriteLine("Would you like to delete this claim?\n" +
                 "1. Yes\n" +
                 "2. No, take me back to the Claims Agent menu");
@@ -110,6 +125,22 @@ namespace Claims
             {
                 case "1":
                     //Figure out how to delete
+                    string deleteInput = Console.ReadLine();
+                    int deleteInputAsInt = int.Parse(deleteInput);
+
+                    //call delete method
+                    bool wasDeleted = _contentRepo.RemoveClaimContentFromList(deleteInputAsInt);
+
+                    // if content was deleted, say so
+                    // otherwise state it could not be deleted
+                    if (wasDeleted)
+                    {
+                        Console.WriteLine("The car profile was successfully deleted.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, the car name was not found and the car profile could not be deleted.");
+                    }
                     break;
                 case "2":
                     Menu();
