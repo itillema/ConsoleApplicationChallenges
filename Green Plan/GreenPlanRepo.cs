@@ -73,7 +73,7 @@ namespace Green_Plan
         }
 
         //Helper method
-        private CarInformation GetInfoByName(string name)
+        public CarInformation GetInfoByName(string name)
         {
             foreach(CarInformation info in _listOfCarInformation)
             {
