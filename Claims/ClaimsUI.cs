@@ -103,8 +103,10 @@ namespace Claims
             //Console.WriteLine(viewLastClaimContent.Last());
 
             List<ClaimContent> viewClaimContent = _contentRepo.GetClaimContents();
+            
 
-            //figure out how to format correctly
+            //figure out how to format correctly and get the last item
+
             foreach (ClaimContent claimContent in viewClaimContent.Last(_contentRepo.GetClaimContents == [viewClaimContent -1]))
             {
                 Console.WriteLine($"Claim ID {claimContent.ClaimID} \n" +

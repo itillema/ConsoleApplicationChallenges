@@ -10,6 +10,7 @@ namespace Badges
     //CRUD
     public class BadgeRepo
     {
+        private List<Badge> _listOfBadgeInfo = new List<Badge>();
         public Dictionary<int, Badge> badgeDict = new Dictionary<int, Badge>();
         public Dictionary<string, int> badgeLUT = new Dictionary<string, int>();
 
@@ -22,13 +23,14 @@ namespace Badges
 
         // public/private/protected return_type functionName(parameters)
         //Read or Pull
-        public void GetBadgeInfo(List<Badge> badges)
+        
+        public List<Badge> GetBadgeInfo()
         {
-            foreach (KeyValuePair<int, Badge> item in badgeDict)
-            {
-                badges.Add(item.Value);
-            };
-            return;
+            //foreach (KeyValuePair<int, Badge> item in badgeDict)
+            //{
+                //badges.Add(item.Value);
+            //};
+            return _listOfBadgeInfo;
         }
 
         private Badge GetBadgeInfoByName(string name)
@@ -52,7 +54,7 @@ namespace Badges
         {
             //find info
             
-            Badge oldInfo = GetBadgeInfoByName(originalName);
+            Badge oldInfo = GetBadgeInfo(originalName);
 
             //update info
             
@@ -91,7 +93,7 @@ namespace Badges
         }
 
         //Helper Method
-        /*public Badge GetBadgeInfoByName(string name)
+        private Badge GetInfoByName(string name)
         {
             foreach(Badge badgeInfo in _listOfBadgeInfo)
             {
@@ -101,6 +103,6 @@ namespace Badges
                 }
             }
             return null;
-        }*/
+        }
     }
 }
