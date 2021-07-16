@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claims", "Claims\Claims.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart_Insurance", "Smart_Insurance\Smart_Insurance.csproj", "{539FCF73-5523-48EC-954F-502B41322071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenWorks_UnitTesting", "GreenWorks_UnitTesting\GreenWorks_UnitTesting.csproj", "{801BCE6F-3D67-40BF-A56A-EE04162E9B58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenPlan_UnitTesting", "GreenWorks_UnitTesting\GreenPlan_UnitTesting.csproj", "{801BCE6F-3D67-40BF-A56A-EE04162E9B58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claims_UnitTesting", "Claims_UnitTesting\Claims_UnitTesting.csproj", "{96333AD0-8B7E-40DC-9F3D-78A5A976091D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{801BCE6F-3D67-40BF-A56A-EE04162E9B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{801BCE6F-3D67-40BF-A56A-EE04162E9B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{801BCE6F-3D67-40BF-A56A-EE04162E9B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96333AD0-8B7E-40DC-9F3D-78A5A976091D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96333AD0-8B7E-40DC-9F3D-78A5A976091D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96333AD0-8B7E-40DC-9F3D-78A5A976091D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96333AD0-8B7E-40DC-9F3D-78A5A976091D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
