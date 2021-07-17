@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenPlan_UnitTesting", "Gr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claims_UnitTesting", "Claims_UnitTesting\Claims_UnitTesting.csproj", "{96333AD0-8B7E-40DC-9F3D-78A5A976091D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badges_UnitTesting", "Badges_UnitTesting\Badges_UnitTesting.csproj", "{2DCC4F96-78DE-4BDD-AC6E-2613FEF03BFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{96333AD0-8B7E-40DC-9F3D-78A5A976091D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96333AD0-8B7E-40DC-9F3D-78A5A976091D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96333AD0-8B7E-40DC-9F3D-78A5A976091D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCC4F96-78DE-4BDD-AC6E-2613FEF03BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DCC4F96-78DE-4BDD-AC6E-2613FEF03BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DCC4F96-78DE-4BDD-AC6E-2613FEF03BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DCC4F96-78DE-4BDD-AC6E-2613FEF03BFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

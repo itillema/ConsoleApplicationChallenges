@@ -47,7 +47,6 @@
     <Compile Include="BadgesProgram.cs" />
     <Compile Include="BadgesRepo.cs" />
     <Compile Include="BadgesUI.cs" />
-    <Compile Include="BadgesUnitTesting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
