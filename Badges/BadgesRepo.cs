@@ -26,10 +26,7 @@ namespace Badges
         
         public List<Badge> GetBadgeInfo()
         {
-            //foreach (KeyValuePair<int, Badge> item in badgeDict)
-            //{
-                //badges.Add(item.Value);
-            //};
+            
             return _listOfBadgeInfo;
         }
 
@@ -54,7 +51,7 @@ namespace Badges
         {
             //find info
             
-            Badge oldInfo = GetBadgeInfo(originalName);
+            Badge oldInfo = GetInfoByName(originalName);
 
             //update info
             
@@ -93,7 +90,7 @@ namespace Badges
         }
 
         //Helper Method
-        private Badge GetInfoByName(string name)
+        public Badge GetInfoByName(string name)
         {
             foreach(Badge badgeInfo in _listOfBadgeInfo)
             {

@@ -156,8 +156,6 @@ namespace Badges
 
             Badge newBadgeInfo = new Badge();
 
-            
-
             bool moreDoors = true;
             while (moreDoors)
             {
@@ -167,7 +165,10 @@ namespace Badges
                 Console.WriteLine("List a door that this badge will have access to: ");
 
                 //find and add door info
-                newBadgeInfo.DoorName = Console.ReadLine();
+                string newBadgeInfoString = Console.ReadLine();
+                newBadgeInfoString = string.Join(",", newBadgeInfo.DoorName.ToArray());
+                
+                
 
                 Console.WriteLine("Would you like to:\n" +
                     "1. Add another door to this badge?\n" +
